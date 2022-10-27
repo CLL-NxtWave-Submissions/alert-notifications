@@ -11,12 +11,20 @@
 
 .alert-notifications-header {
   color: #0f172a;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .alert-notifications-list {
   list-style-type: none;
   padding-left: 0;
+}
+
+@media (min-width: 768px) {
+  .alert-notifications-header {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
 }
