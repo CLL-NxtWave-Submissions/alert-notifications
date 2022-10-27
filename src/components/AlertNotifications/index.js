@@ -26,7 +26,9 @@ const AlertNotifications = () => (
     <h1 className="alert-notifications-header">Alert Notifications</h1>
     <ul className="alert-notifications-list">
       {notificationsData.map(notificationsDataItem => (
-        <Notification>{notificationsDataItem}</Notification>
+        <Notification key={Math.floor(Math.random() * 1000)}>
+          {notificationsDataItem}
+        </Notification>
       ))}
     </ul>
   </div>
