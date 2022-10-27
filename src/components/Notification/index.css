@@ -1,1 +1,43 @@
-/* Write your CSS here */
+.notification-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border: 0.1rem solid #e5e5e5;
+  border-radius: 0.4rem;
+}
+
+.notification-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.notification-close-button {
+  background: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.notification-close-button-icon {
+  color: #475569;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.success-notification {
+  color: #2dca73;
+}
+
+.error-notification {
+  color: #ff0b37;
+}
+
+.warning-notification {
+  color: #ffb800;
+}
+
+.info-notification {
+  color: #0f81e0;
+}
