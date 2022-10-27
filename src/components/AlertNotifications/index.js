@@ -6,35 +6,27 @@ import Notification from '../Notification'
 
 import './index.css'
 
-const notificationsData = {
-  data: (
-    <>
-      <AiFillCheckCircle className="success-notification" />
-    </>
-  ),
-  data: (
-    <>
-      <RiErrorWarningFill className="error-notification" />
-    </>
-  ),
-  data: (
-    <>
-      <MdWarning className="warning-notification" />
-    </>
-  ),
-  data: (
-    <>
-      <MdInfo className="info-notification" />
-    </>
-  ),
-}
+const notificationsData = [
+  <>
+    <AiFillCheckCircle className="success-notification" />
+  </>,
+  <>
+    <RiErrorWarningFill className="error-notification" />
+  </>,
+  <>
+    <MdWarning className="warning-notification" />
+  </>,
+  <>
+    <MdInfo className="info-notification" />
+  </>,
+]
 
 const AlertNotifications = () => (
   <div className="alert-notifications-container">
     <h1 className="alert-notifications-header">Alert Notifications</h1>
     <ul className="alert-notifications-list">
       {notificationsData.map(notificationsDataItem => (
-        <Notification></Notification>
+        <Notification>{notificationsDataItem}</Notification>
       ))}
     </ul>
   </div>
