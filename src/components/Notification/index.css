@@ -11,26 +11,28 @@
 
 .notification-content-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .notification-icon-container {
   display: flex;
   flex-direction: column;
   height: 100%;
+  margin-right: 2rem;
 }
 
 .notification-icon {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-top: 0.5rem;
 }
 
 .notification-header-description-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
 }
 
@@ -41,6 +43,7 @@
 
 .notification-header {
   font-weight: 550;
+  margin-top: 0.5rem;
 }
 
 .notification-description {
@@ -56,8 +59,8 @@
 
 .notification-close-button-icon {
   color: #475569;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.6rem;
+  width: 1.6rem;
 }
 
 .success-notification {
