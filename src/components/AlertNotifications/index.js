@@ -8,7 +8,9 @@ import './index.css'
 
 const notificationData = [
   {
-    icon: <AiFillCheckCircle className="success-notification" />,
+    icon: (
+      <AiFillCheckCircle className="notification-icon success-notification" />
+    ),
     heading: <h1 className="notification-header">Success</h1>,
     description: (
       <p className="notification-description">
@@ -17,7 +19,9 @@ const notificationData = [
     ),
   },
   {
-    icon: <RiErrorWarningFill className="error-notification" />,
+    icon: (
+      <RiErrorWarningFill className="notification-icon error-notification" />
+    ),
     heading: <h1 className="notification-header">Error</h1>,
     description: (
       <p className="notification-description">
@@ -26,7 +30,7 @@ const notificationData = [
     ),
   },
   {
-    icon: <MdWarning className="warning-notification" />,
+    icon: <MdWarning className="notification-icon warning-notification" />,
     heading: <h1 className="notification-header">Warning</h1>,
     description: (
       <p className="notification-description">
@@ -35,7 +39,7 @@ const notificationData = [
     ),
   },
   {
-    icon: <MdInfo className="info-notification" />,
+    icon: <MdInfo className="notification-icon info-notification" />,
     heading: <h1 className="notification-header">Info</h1>,
     description: (
       <p className="notification-description">
