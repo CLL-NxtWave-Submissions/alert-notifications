@@ -11,7 +11,9 @@ const notificationData = [
     icon: (
       <AiFillCheckCircle className="notification-icon success-notification" />
     ),
-    heading: <h1 className="notification-header">Success</h1>,
+    heading: (
+      <h1 className="notification-header success-notification">Success</h1>
+    ),
     description: (
       <p className="notification-description">
         You can access all the files in the folder
@@ -22,7 +24,7 @@ const notificationData = [
     icon: (
       <RiErrorWarningFill className="notification-icon error-notification" />
     ),
-    heading: <h1 className="notification-header">Error</h1>,
+    heading: <h1 className="notification-header error-notification">Error</h1>,
     description: (
       <p className="notification-description">
         Sorry, you are not authorized to have access to delete the file
@@ -31,7 +33,9 @@ const notificationData = [
   },
   {
     icon: <MdWarning className="notification-icon warning-notification" />,
-    heading: <h1 className="notification-header">Warning</h1>,
+    heading: (
+      <h1 className="notification-header warning-notification">Warning</h1>
+    ),
     description: (
       <p className="notification-description">
         Viewers of this file can see comments and suggestions
@@ -40,7 +44,7 @@ const notificationData = [
   },
   {
     icon: <MdInfo className="notification-icon info-notification" />,
-    heading: <h1 className="notification-header">Info</h1>,
+    heading: <h1 className="notification-header info-notification">Info</h1>,
     description: (
       <p className="notification-description">
         Anyone on the internet can view these files
